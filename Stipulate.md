@@ -14,7 +14,14 @@
 
 > 主类型:codes,notes,stipulates,all(codes and notes)
 >
-> 子类型:add(A) modify(M) remove(R)
+> 子类型:add modify remove 
 >
 > 具体内容:以子类型的动词开头的内容
 
+```markdown
+<Super type>
+```
+
+> Super type : 完成重大事情时,采用的提交方式;
+>
+> 超类型:Initialization(初始化) Acclimatization(适应) 
