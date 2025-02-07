@@ -14,7 +14,7 @@
 
 > 主类型:codes,notes,stipulates,all(codes and notes)
 >
-> 子类型:add modify remove 
+> 子类型:add modify remove test
 >
 > 具体内容:以子类型的动词开头的内容
 
