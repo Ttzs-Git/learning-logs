@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\12the_12th_class\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60773072-5256-49D9-B92D-258D631C4743}|12the_12th_class\\12the_12th_class.vcxproj|D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\12the_12th_class\\12the_12th_class\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{60773072-5256-49D9-B92D-258D631C4743}|12the_12th_class\\12the_12th_class.vcxproj|solutionrelative:12the_12th_class\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.c",
+              "DocumentMoniker": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\12the_12th_class\\12the_12th_class\\test.c",
+              "RelativeDocumentMoniker": "12the_12th_class\\test.c",
+              "ToolTip": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\12the_12th_class\\12the_12th_class\\test.c",
+              "RelativeToolTip": "12the_12th_class\\test.c",
+              "ViewState": "AgIAAPsBAAAAAAAAAAAAwAcCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-24T12:42:01.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\11the_eleventh_class\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9732CCD1-BF2A-466C-B0F0-F85F7EB85BD1}|11the_eleventh_class\\11the_eleventh_class.vcxproj|D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\11the_eleventh_class\\11the_eleventh_class\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9732CCD1-BF2A-466C-B0F0-F85F7EB85BD1}|11the_eleventh_class\\11the_eleventh_class.vcxproj|solutionrelative:11the_eleventh_class\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.c",
+              "DocumentMoniker": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\11the_eleventh_class\\11the_eleventh_class\\test.c",
+              "RelativeDocumentMoniker": "11the_eleventh_class\\test.c",
+              "ToolTip": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\11the_eleventh_class\\11the_eleventh_class\\test.c*",
+              "RelativeToolTip": "11the_eleventh_class\\test.c*",
+              "ViewState": "AgIAAKwDAAAAAAAAAAAiwMMDAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-04T05:19:50.562Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

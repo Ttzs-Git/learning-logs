@@ -1,0 +1,12 @@
+﻿  test.c
+D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\11the_eleventh_class\test.c(912,4): warning C4048: “int (*)[4]”和“int (*)[5]”数组的下标不同
+D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\11the_eleventh_class\test.c(913,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“__int64”
+D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\11the_eleventh_class\test.c(913,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“__int64”
+      D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\11the_eleventh_class\test.c(913,9):
+      请考虑在格式字符串中使用“%lld”
+      D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\11the_eleventh_class\test.c(913,9):
+      请考虑在格式字符串中使用“%Id”
+      D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\11the_eleventh_class\test.c(913,9):
+      请考虑在格式字符串中使用“%I64d”
+  
+  11the_eleventh_class.vcxproj -> D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\11the_eleventh_class\x64\Debug\11the_eleventh_class.exe

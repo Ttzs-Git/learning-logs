@@ -1,0 +1,7 @@
+﻿  test.c
+D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\the_class_book\test1205\test1205\test.c(1100,30): warning C4013: “strlen”未定义；假设外部返回 int
+D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\the_class_book\test1205\test1205\test.c(1100,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+      D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\the_class_book\test1205\test1205\test.c(1100,9):
+      请考虑在格式字符串中使用“%zd”
+  
+  test1205.vcxproj -> D:\gitee_github\learning-c-language\C Learn Code Zone\C Learn Code Zone_another version\the_class_book\test1205\x64\Debug\test1205.exe

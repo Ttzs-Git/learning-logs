@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/sqrt.dir/link.d CMakeFiles/sqrt.dir/sqrt.cpp.o -o sqrt

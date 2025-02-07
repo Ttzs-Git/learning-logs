@@ -1,0 +1,2 @@
+/home/ttzs/project_2048/c/build/CMakeFiles/edit_cache.dir
+/home/ttzs/project_2048/c/build/CMakeFiles/rebuild_cache.dir

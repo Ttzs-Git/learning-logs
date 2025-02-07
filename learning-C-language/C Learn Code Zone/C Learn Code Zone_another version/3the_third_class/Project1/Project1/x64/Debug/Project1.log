@@ -1,0 +1,4 @@
+﻿  test.c
+F:\code_work_ttzs\C_learning\C语言\2024\第三节\Project1\Project1\test.c(275,29): warning C4047: “函数”:“int”与“int [10]”的间接级别不同
+F:\code_work_ttzs\C_learning\C语言\2024\第三节\Project1\Project1\test.c(275,26): warning C4024: “binaty_search”: 形参和实参 1 的类型不同
+  Project1.vcxproj -> F:\code_work_ttzs\C_learning\C语言\2024\第三节\Project1\x64\Debug\Project1.exe

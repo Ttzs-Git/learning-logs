@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/ttzs/learning-CPP-language/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/sqrt.dir/sqrt.cpp.o -c /home/ttzs/learning-CPP-language/cmake/codes/code1/sqrt.cpp",
+  "file": "/home/ttzs/learning-CPP-language/cmake/codes/code1/sqrt.cpp",
+  "output": "CMakeFiles/sqrt.dir/sqrt.cpp.o"
+}
+]

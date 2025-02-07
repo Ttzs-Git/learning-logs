@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\0the_class_book\\test1126\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD98E9DE-9AE8-4F5C-8156-D68385CD0801}|test1126\\test1126.vcxproj|D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\0the_class_book\\test1126\\test1126\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CD98E9DE-9AE8-4F5C-8156-D68385CD0801}|test1126\\test1126.vcxproj|solutionrelative:test1126\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.c",
+              "DocumentMoniker": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\0the_class_book\\test1126\\test1126\\test.c",
+              "RelativeDocumentMoniker": "test1126\\test.c",
+              "ToolTip": "D:\\gitee_github\\learning-c-language\\C Learn Code Zone\\C Learn Code Zone_another version\\0the_class_book\\test1126\\test1126\\test.c",
+              "RelativeToolTip": "test1126\\test.c",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAYwP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-26T10:08:39.327Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
