@@ -12,7 +12,7 @@
 <type subtypes>:Specifics
 ```
 
-> 主类型:codes,notes,stipulates,
+> 主类型:codes,notes,stipulates,all(codes and notes)
 >
 > 子类型:add(A) modify(M) remove(R)
 >
