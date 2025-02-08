@@ -17,6 +17,8 @@
 > 子类型:add modify remove test
 >
 > 具体内容:以子类型的动词开头的内容
+>
+> > 简化版: 具体内容中只有内容
 
 ```markdown
 <Super type>
