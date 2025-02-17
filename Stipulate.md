@@ -12,9 +12,9 @@
 <type subtypes>:Specifics
 ```
 
-> 主类型:codes,notes,stipulates,all(codes and notes)
+> 主类型:codes,notes,stipulates,all(codes and notes) folder
 >
-> 子类型:add modify remove test folder
+> 子类型:add modify remove test 
 >
 > 具体内容:以子类型的动词开头的内容
 >
