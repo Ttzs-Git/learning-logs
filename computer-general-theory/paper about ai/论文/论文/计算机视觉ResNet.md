@@ -5,7 +5,7 @@
 - substantially ad.大幅度地
 - explicitly ad.明确地
 - reformulate v.重新制定
-- reference n.参看
+- with reference to 相对于
 - instead of 而不是
 - empirical a.实证
 - optimize v.优化
@@ -15,3 +15,10 @@
 - relative a.相对的
 - submission n.提交
 - foundation n.基础
+- appendix n.附录
+
+------
+# 第一遍
+
+-----
+# 第二遍
