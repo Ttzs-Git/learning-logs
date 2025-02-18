@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文/深度学习经典Transformer.md",
+                "file": "深度学习/动手学深度学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "深度学习经典Transformer"
+              "title": "动手学深度学习"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "95b158af4b03483d",
@@ -170,8 +171,8 @@
   },
   "active": "35ae3e0eb5762678",
   "lastOpenFiles": [
-    "论文/计算机视觉ResNet.md",
     "论文/深度学习经典Transformer.md",
+    "论文/计算机视觉ResNet.md",
     "深度学习/动手学深度学习.md",
     "论文/深度学习奠基之作AlexNet.md",
     "深度学习/图片/Pasted image 20250217195804.png",
