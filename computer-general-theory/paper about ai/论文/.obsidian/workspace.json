@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "深度学习/动手学深度学习.md",
+                "file": "论文/深度学习奠基之作AlexNet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "动手学深度学习"
+              "title": "深度学习奠基之作AlexNet"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "95b158af4b03483d",
@@ -171,29 +170,34 @@
   },
   "active": "35ae3e0eb5762678",
   "lastOpenFiles": [
-    "论文/深度学习经典Transformer.md",
     "论文/计算机视觉ResNet.md",
+    "论文/论文方法.md",
+    "生成式人工智能导论/生成式人工智能导论.md",
+    "生成式人工智能导论/PPT/第二讲/GenAI2024 HW2 - Google Slides.pdf",
+    "生成式人工智能导论/PPT/第二讲/~$0301_prompt_part1.pptx",
+    "生成式人工智能导论/PPT/第二讲/~$0301_universal.pptx",
+    "生成式人工智能导论/PPT/第二讲/0301_prompt_part1.pptx",
+    "生成式人工智能导论/PPT/第二讲/0301_universal.pptx",
+    "生成式人工智能导论/PPT/第二讲",
+    "生成式人工智能导论/PPT/第二件",
+    "生成式人工智能导论/PPT/新建文件夹",
+    "笔记.png",
+    "笔记 1.png",
+    "生成式人工智能导论/PPT/第一讲/~$0223_course.pptx",
+    "生成式人工智能导论/PPT/第一讲/Self-Supervised Speech Representation Learning_A Review.pdf",
+    "Pasted image 20250220130758.png",
+    "Pasted image 20250219204736.png",
     "深度学习/动手学深度学习.md",
+    "论文/深度学习经典Transformer.md",
     "论文/深度学习奠基之作AlexNet.md",
     "深度学习/图片/Pasted image 20250217195804.png",
     "深度学习/图片/Pasted image 20250217205039.png",
     "深度学习/本地开发环境.md",
     "奇怪的idea.md",
-    "深度学习/图片",
     "深度学习/图片/Pasted image 20250217194453.png",
     "深度学习/图片/Pasted image 20250217194307.png",
     "深度学习/图片/Pasted image 20250217194111.png",
     "深度学习/图片/Pasted image 20250217193727.png",
-    "论文/论文方法.md",
-    "论文/pi/Pasted image 20250216203919.png",
-    "论文",
-    "深度学习",
-    "机器学习/实用机器学习.md",
-    "论文/pi/Pasted image 20250216211554.png",
-    "论文/pi/Pasted image 20250216210702.png",
-    "论文/计算机视觉 __CNN/Deep Residual Learning for Image Recognition.pdf",
-    "论文/pi/Pasted image 20250216172155.png",
-    "机器学习",
-    "NIPS-2012-imagenet-classification-with-deep-convolutional-neural-networks-Paper.pdf"
+    "机器学习/实用机器学习.md"
   ]
 }
