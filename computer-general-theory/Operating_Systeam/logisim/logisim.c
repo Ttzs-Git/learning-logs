@@ -1,4 +1,4 @@
-#include <logisim.h>
+#include "logisim.h"
 #include <stdio.h>
 
 // Wire and registers in the circuit
