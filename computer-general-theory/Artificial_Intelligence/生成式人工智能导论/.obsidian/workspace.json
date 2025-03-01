@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "bb1679824f94a784",
+    "type": "split",
+    "children": [
+      {
+        "id": "3057d33386d5465a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c78b9ec4c76cbaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI-Guide-and-Demos-zh_CN-master/Guide/01. 初识 LLM API：环境配置与多轮对话演示.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01. 初识 LLM API：环境配置与多轮对话演示"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "858d5a0af723aa2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d774a60f4bcb3457",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d6829927ef35a78",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9397146b709ea655",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "0c67e9ead8f34bd8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5f97d58be947c1da",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb8bab895ff558d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d54274cb6ee719f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AI-Guide-and-Demos-zh_CN-master/Guide/01. 初识 LLM API：环境配置与多轮对话演示.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "01. 初识 LLM API：环境配置与多轮对话演示 的反向链接列表"
+            }
+          },
+          {
+            "id": "b43e80facc05edf4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AI-Guide-and-Demos-zh_CN-master/Guide/01. 初识 LLM API：环境配置与多轮对话演示.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "01. 初识 LLM API：环境配置与多轮对话演示 的出链列表"
+            }
+          },
+          {
+            "id": "9996014c9615286a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "744dad95becafaac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AI-Guide-and-Demos-zh_CN-master/Guide/01. 初识 LLM API：环境配置与多轮对话演示.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "01. 初识 LLM API：环境配置与多轮对话演示 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "0c78b9ec4c76cbaf",
+  "lastOpenFiles": [
+    "草稿/生成式人工智能导论(停更).png",
+    "草稿",
+    "新建文件夹",
+    "笔记.png",
+    "笔记.excalidraw.crswap",
+    "笔记1.png.crswap",
+    "hw/hw1/hw1.ipynb",
+    "hw/hw1",
+    "hw/新建文件夹",
+    "AI-Guide-and-Demos-zh_CN-master/Guide/00. 大模型 API 获取步骤.md",
+    "AI-Guide-and-Demos-zh_CN-master/PaperNotes/assets/对比输出以及训练奖励模型.svg",
+    "AI-Guide-and-Demos-zh_CN-master/PaperNotes/对比学习论文随笔 1：正负样本.md",
+    "AI-Guide-and-Demos-zh_CN-master/PaperNotes/README.md",
+    "AI-Guide-and-Demos-zh_CN-master/PaperNotes/Transformer 论文精读.md",
+    "AI-Guide-and-Demos-zh_CN-master/PaperNotes/GPT 论文精读.md",
+    "AI-Guide-and-Demos-zh_CN-master/PaperNotes/BERT 论文精读.md",
+    "AI-Guide-and-Demos-zh_CN-master/CodePlayground/README.md",
+    "AI-Guide-and-Demos-zh_CN-master/Demos/PDF/HW_BERT_Question_Answering.pdf",
+    "AI-Guide-and-Demos-zh_CN-master/GenAI_PDF/HW1.pdf",
+    "AI-Guide-and-Demos-zh_CN-master/GenAI_PDF/HW2.pdf",
+    "生成式人工智能导论(停更).png",
+    "README.md",
+    "笔记1.png"
+  ]
+}
