@@ -15,3 +15,9 @@ python -m doctest lab.py
 ```
 
 > 测试
+
+## 快捷键
+
+[C+L]
+
+> 清除当前页面的内容
