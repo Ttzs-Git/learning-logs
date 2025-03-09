@@ -10,11 +10,7 @@ python -i lab.py
 
 > 交互式运行
 
-```bash
-python -m doctest lab.py
-```
 
-> 测试
 
 ## 快捷键
 
