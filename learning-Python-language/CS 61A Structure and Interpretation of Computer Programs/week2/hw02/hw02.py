@@ -32,6 +32,10 @@ def product(n, term):
     162
     """
     "*** YOUR CODE HERE ***"
+    total,k=1,1
+    while k<=n:
+        total,k=total*term(k),k+1
+    return total
 
 
 def accumulate(fuse, start, n, term):
@@ -54,6 +58,10 @@ def accumulate(fuse, start, n, term):
     19
     """
     "*** YOUR CODE HERE ***"
+    total,k=start,1
+    while k<=n:
+        total,k=fuse(total,term(k)),k+1
+    return total
 
 
 def summation_using_accumulate(n, term):
@@ -68,7 +76,7 @@ def summation_using_accumulate(n, term):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(summation_using_accumulate)).body[0].body]
     ['Expr', 'Return']
     """
-    return ____
+    return accumulate(add,0,n,term)
 
 
 def product_using_accumulate(n, term):
@@ -83,9 +91,9 @@ def product_using_accumulate(n, term):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(product_using_accumulate)).body[0].body]
     ['Expr', 'Return']
     """
-    return ____
+    return accumulate(mul,1,n,term)
 
-
+from functools import reduce
 def make_repeater(f, n):
     """Returns the function that computes the nth application of f.
 
@@ -100,4 +108,21 @@ def make_repeater(f, n):
     390625
     """
     "*** YOUR CODE HERE ***"
+    # def wrapped(start):
+    #     a=start
+    #     for i in range(n):
+    #         a=f(a)
+    #     return a
+    # return wrapped
 
+    # if n == 0:
+    #     return lambda x: x # Identity function, as applying no function is equivalent to doing nothing.
+    # else:
+    #     return lambda x: f(make_repeater(f, n-1)(x))
+    # 运用迭代的思想创建
+
+    def repeater(x):
+        return reduce(lambda acc, _: f(acc), range(n), x)
+    return repeater
+
+        
