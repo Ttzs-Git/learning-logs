@@ -1,7 +1,9 @@
 from math import gcd
 """定义抽象的数据类型——有理数"""
-def rational(x,y):
+def rational(x,y=1):
     """构造器,通过列表抽象成一个整体"""
+    if y==0:
+        return 'error'
     n=gcd(x,y)
     return [x//n,y//n]
 
@@ -22,5 +24,30 @@ def show(x):
     print(f'{numer(x)}/{denom(x)}')
 
 
-# def add(x,y):
-#     return rational()
+def add(x,y):
+    nx,dx=numer(x),denom(x)
+    ny,dy=numer(y),denom(y)
+    return rational(dx*ny+dy*nx,dx*dy)
+
+def sub(x,y):
+    nx,dx=numer(x),denom(x)
+    ny,dy=numer(y),denom(y)
+    return rational(dx*ny-dy*nx,dx*dy)
+
+def mul(x,y):
+    nx,dx=numer(x),denom(x)
+    ny,dy=numer(y),denom(y)
+    return rational(nx*ny,dx*dy)
+
+def div(x,y):
+    nx,dx=numer(x),denom(x)
+    ny,dy=numer(y),denom(y)
+    if y==0:
+        return 'error!!!'
+    else:
+        return rational(nx*dy,dx*ny)
+   
+def equal(x,y):
+    nx,dx=numer(x),denom(x)
+    ny,dy=numer(y),denom(y)
+    return nx*dy==dx*ny
