@@ -22,7 +22,7 @@ def roll_dice(num_rolls, dice=six_sided):
     assert num_rolls > 0, 'Must roll at least once.'
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
-    list=[dice(i) for i in range(num_rolls)]
+    list=[dice() for _ in range(num_rolls)]
     if 1 in list:
         return 1
     else:
@@ -63,6 +63,10 @@ def take_turn(num_rolls, player_score, opponent_score, dice=six_sided):
     assert num_rolls <= 10, 'Cannot roll more than 10 dice.'
     # BEGIN PROBLEM 3
     "*** YOUR CODE HERE ***"
+    if num_rolls:
+        return roll_dice(num_rolls,dice)
+    else:
+        return boar_brawl(player_score,opponent_score)
     # END PROBLEM 3
 
 
