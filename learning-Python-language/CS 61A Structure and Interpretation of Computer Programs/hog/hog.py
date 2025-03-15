@@ -22,6 +22,11 @@ def roll_dice(num_rolls, dice=six_sided):
     assert num_rolls > 0, 'Must roll at least once.'
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
+    list=[dice(i) for i in range(num_rolls)]
+    if 1 in list:
+        return 1
+    else:
+        return sum(list)
     # END PROBLEM 1
 
 
@@ -34,6 +39,12 @@ def boar_brawl(player_score, opponent_score):
     """
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
+    p1=player_score%10 #返回玩家的个位数
+    o2=opponent_score//10%10 #返回对手的十位数,且为假设对手的分数小于100
+    if p1>o2:
+        return 3*(p1-o2)
+    else:
+        return max(1,3*(o2-p1))
     # END PROBLEM 2
 
 
