@@ -161,7 +161,14 @@ def play(strategy0, strategy1, update,
     who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     # BEGIN PROBLEM 5
     "*** YOUR CODE HERE ***"
-    # END PROBLEM 5
+    while True:
+        score0=update(strategy0(score0,score1),score0,score1,dice)
+        if(score0>=goal):
+            break
+        score1=update(strategy1(score1,score0),score1,score0,dice)
+        if(score1>=goal):
+            break
+    # END PROBLEM 50
     return score0, score1
 
 
