@@ -193,6 +193,9 @@ def always_roll(n):
     assert n >= 0 and n <= 10
     # BEGIN PROBLEM 6
     "*** YOUR CODE HERE ***"
+    def wrapped(player,oppen):
+        return n
+    return wrapped
     # END PROBLEM 6
 
 
@@ -224,6 +227,24 @@ def is_always_roll(strategy, goal=GOAL):
     """
     # BEGIN PROBLEM 7
     "*** YOUR CODE HERE ***"
+    # list1=[]
+    # for x in range(goal):
+    #     for y in range(goal):
+    #         list1.append(strategy(x,y))
+    # # 检查列表中的值是否相等
+    # for i in list1:
+    #     for j in list1:
+    #         if(i!=j):
+    #             return False
+    # return True 
+    # 版本二改进版
+    set1=set()
+    for x in range(goal):
+        for y in range(goal):
+            set1.add(strategy(x,y))
+            if(len(set1)>1):
+                return False
+    return True   
     # END PROBLEM 7
 
 
@@ -240,6 +261,10 @@ def make_averaged(original_function, times_called=1000):
     """
     # BEGIN PROBLEM 8
     "*** YOUR CODE HERE ***"
+    def wrapped(*args):
+        list1=[original_function(*args) for _ in range(times_called)]
+        return sum(list1)/times_called
+    return wrapped
     # END PROBLEM 8
 
 
