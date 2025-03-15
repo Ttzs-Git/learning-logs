@@ -278,6 +278,16 @@ def max_scoring_num_rolls(dice=six_sided, times_called=1000):
     """
     # BEGIN PROBLEM 9
     "*** YOUR CODE HERE ***"
+    ave=[]
+    for i in range(10):
+        wrapped=make_averaged(roll_dice,times_called)(i+1,dice)
+        ave.append(wrapped)
+    # 现在生成了一个平均分列表
+    a=0
+    for i in range(10):
+        if ave[i]>ave[a]:
+            a=i
+    return a+1
     # END PROBLEM 9
 
 
