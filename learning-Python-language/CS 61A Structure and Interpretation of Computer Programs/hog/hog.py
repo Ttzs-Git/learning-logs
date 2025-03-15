@@ -354,7 +354,10 @@ def final_strategy(score, opponent_score):
 
     *** YOUR DESCRIPTION HERE ***
     """
-    # BEGIN PROBLEM 12
+    score_env=sus_update(0,score,opponent_score)
+    threshold=make_averaged(roll_dice,100)(6)
+    if (score_env-score)>=threshold:
+        return 0
     return 6  # Remove this line once implemented.
     # END PROBLEM 12
 
