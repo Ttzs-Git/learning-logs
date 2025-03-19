@@ -29,6 +29,14 @@ Summary: `external source`----`string representation`------`type`
 
 > stringstream is not connected to any external source.
 
+### streampos
+
+> 无符号整数类型  stream postion的缩写——流中的绝对位置
+
+### streamoff
+
+> 用于表示字节偏移量，有符号整数的位置——流中的相对位置
+
 ### ostringstream
 ```python
  ostringstream 变量名("内容",参数) 
@@ -43,7 +51,7 @@ Summary: `external source`----`string representation`------`type`
 > 
 
 ```python
-变量<<"内容"
+<var><<"content"
 ```
 > `目的`:向流中输入内容
 >
@@ -51,10 +59,34 @@ Summary: `external source`----`string representation`------`type`
 
 
 ```python
-变量.str()
+<var>.str()
 ```
 
 > `目的`:将流的内容转化为字符串
+
+```cpp
+<var>.tellp()
+```
+
+> `目的`:输出流中当前写指针的位置
+
+```cpp
+<var>.seekp(pos)
+```
+
+> `目的`:将写指针移动到索引[pos]的位置——seekput
+
+```cpp
+<var>.seekkp(offset,direction)
+```
+
+> `目的`:根据偏移量offset和方向direction移动写指针
+>
+> `方向参数`:
+>
+> 1. `ios::beg`:从流的开头开始计算
+> 2. `ios::cur`:从当前指针位置开始计算
+> 3. `ios::end`:从流的末尾开始计算
 
 ### istringstream
 
@@ -70,10 +102,28 @@ istringstream 变量名(字符串,参数)
 > 2. 
 
 ```python
-流变量>>变量
+<i_var> >> <var>
 ```
 
-> `目的`:从流中读取内容并储存在另一个合适的变量;不同的Token以`空白符`或者`类型`分割
+> `目的`:从流中读取内容并储存在另一个合适的变量;不同的Token以`空白符`或者`无效的类型`分割
+
+```cpp
+<i_var>.tellg()
+```
+
+> `目的`:返回输入流中当前的读指针的位置
+
+```cpp
+<var>.seekg(pos)
+```
+
+> `目的`:将读指针移动到指定位置[pos]
+
+```cpp
+<var>.seekg(offset,direction)
+```
+
+> `目的`:根据偏移量 `offset` 和方向 `direction` 移动读指针
 
 ### 流的四个参数
 
@@ -85,3 +135,5 @@ istringstream 变量名(字符串,参数)
 > 1. G and B are not opposites! (e.g. type mismatch) 
 > 2. G and F are not opposites! (e.g. end of file)
 > 3. F and E are normally the ones you will be checking
+
+## 

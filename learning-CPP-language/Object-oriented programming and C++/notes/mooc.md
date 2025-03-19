@@ -184,3 +184,128 @@ int main()
 >     return count;
 > }
 > ```
+
+## 例三:练习类和对象数组的定义与使用,思考深拷贝与浅拷贝的问题
+
+![image-20250319201225948](D:\github\learning-logs\learning-CPP-language\Object-oriented programming and C++\notes\mooc.assets\image-20250319201225948.png)1
+
+```cpp
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Student
+{
+private:
+    int age;
+    string name;
+public:
+    Student(int m,string n);
+    Student();
+    ~Student();
+    void SetMember(int m,string n);
+    int Getage();
+    string Getname();
+};
+
+Student::Student(int m,string n)
+{
+    age=m;
+    name=n;
+    
+}
+Student::Student()
+{
+    age=0;
+    name="unnamed";
+}
+
+Student::~Student()
+{
+}
+
+void Student::SetMember(int m,string n)
+{
+    age=m;
+    name=n;
+}
+
+int Student::Getage()
+{
+    // 返回年龄
+    return age;
+}
+
+string Student::Getname()
+{
+    // 返回姓名
+    return name;
+}
+
+int main()
+{
+    Student stu[3]={Student(13,"wang")};
+    stu[2].SetMember(12,"zhang");
+    for (int i =0;i!=3;++i)
+    {
+        cout<<stu[i].Getage()<<','<<stu[i].Getname()<<'\n';
+    }
+    return 0;
+}
+```
+
+> Q:我们是否有进一步改进的地方？
+>
+> A:(QW-2.5)
+>
+> ```cpp
+> #include<iostream>
+> #include<string>
+> using namespace std;
+> 
+> class Student {
+> private:
+>     int age;
+>     string name;
+> 
+> public:
+>     // 构造函数
+>     Student(int m = 0, const string& n = "unnamed") : age(m), name(n) {}
+> 
+>     // 设置成员变量
+>     void SetMember(int m, const string& n) {
+>         age = m;
+>         name = n;
+>     }
+> 
+>     // 获取年龄
+>     int GetAge() const {
+>         return age;
+>     }
+> 
+>     // 获取姓名
+>     string GetName() const {
+>         return name;
+>     }
+> };
+> 
+> int main() {
+>     // 在C++98中，数组元素不能直接使用构造函数初始化，所以我们逐个初始化
+>     Student stu[3];
+>     stu[0] = Student(13, "wang");
+>     stu[1] = Student(); // 使用默认构造函数
+>     stu[2] = Student();
+>     stu[2].SetMember(12, "zhang");
+> 
+>     // 输出学生信息
+>     for (int i = 0; i < 3; ++i) {
+>         cout << stu[i].GetAge() << ',' << stu[i].GetName() << endl;
+>     }
+> 
+>     return 0;
+> }
+> ```
+
+## 例四：练习类与对象的定义与正确使用
+
+![image-20250319201258064](D:\github\learning-logs\learning-CPP-language\Object-oriented programming and C++\notes\mooc.assets\image-20250319201258064.png)
