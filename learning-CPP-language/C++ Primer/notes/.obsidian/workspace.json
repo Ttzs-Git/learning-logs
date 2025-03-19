@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "2768241d7d90f26a",
+    "id": "695aa1757e580c53",
     "type": "split",
     "children": [
       {
-        "id": "3a65e3b5b224a9aa",
+        "id": "38fe51ca597e168b",
         "type": "tabs",
         "children": [
           {
-            "id": "0d4df01d2fad621e",
+            "id": "f6fc805903f2a469",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "标准库类型/vector模板(向量).md",
+                "file": "cpp11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vector模板(向量)"
+              "title": "cpp11"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d801df019a93cd3d",
+    "id": "c53621ce55802b3e",
     "type": "split",
     "children": [
       {
-        "id": "04c78cfe3c1cb94b",
+        "id": "8b2a502e4042ecd8",
         "type": "tabs",
         "children": [
           {
-            "id": "3a1f2b02935181c3",
+            "id": "fb0fde112d6bb5f6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "8931c7c9a26accfb",
+            "id": "1fe26051870e015a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "8032c41f1a7beaf6",
+            "id": "bf67bbef422e00c2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "8c7b4ee5aebb0b5c",
+    "id": "1e35c429230e2bc9",
     "type": "split",
     "children": [
       {
-        "id": "52ee8c7c6edf8c40",
+        "id": "f01c260a95450e0d",
         "type": "tabs",
         "children": [
           {
-            "id": "a993dc8f654dd1de",
+            "id": "b82bfa7b861a1117",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "cpp11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,47 +104,51 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "cpp11 的反向链接列表"
             }
           },
           {
-            "id": "3f17978d78bb2fcd",
+            "id": "b3e7ac5799cc1586",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "cpp11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "cpp11 的出链列表"
             }
           },
           {
-            "id": "49e563ab9fa71e55",
+            "id": "8a2e2511b45962a8",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "9b26d726c9f58ba4",
+            "id": "0d23de750c30b046",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "cpp11.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "cpp11 的大纲"
             }
           }
         ]
@@ -163,54 +168,6 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0d4df01d2fad621e",
-  "lastOpenFiles": [
-    "c++.canvas",
-    "C++11.md",
-    "pi/Pasted image 20250319225413.png",
-    "标准库类型.md",
-    "函数/函数.md",
-    "函数",
-    "备注.md",
-    "语句.md",
-    "基本类型.md",
-    "变量.md",
-    "表达式.md",
-    "标准库类型/string.md",
-    "复合类型.md",
-    "头文件.md",
-    "命名空间.md",
-    "类型处理.md",
-    "经典练习题.md",
-    "常见技术.md",
-    "标准库类型/vector模板(向量).md",
-    "标准库类型/编写建议.md",
-    "标准库类型",
-    "预处理命令.md",
-    "cpp11.md",
-    "c++11/C++11.md",
-    "c++11/命名空间.md",
-    "c++11/头文件.md",
-    "c++11/自定义数据结构.md",
-    "c++11/备注.md",
-    "c++11/经典练习题.md",
-    "c++11/pi/image-13.png",
-    "c++11/pi/image-12.png",
-    "c++11/pi/image-11.png",
-    "c++11/pi/image-10.png",
-    "c++11/pi/image-9.png",
-    "c++11/pi/image-8.png",
-    "c++11/pi/image-7.png",
-    "c++11/pi/image-6.png",
-    "c++11/pi/image-5.png",
-    "c++11/pi",
-    "c++11/新建文件夹",
-    "c++11",
-    "论文",
-    "python",
-    "未命名.canvas",
-    "未命名 1.canvas",
-    "期末考试",
-    "未命名 1"
-  ]
+  "active": "f6fc805903f2a469",
+  "lastOpenFiles": []
 }
