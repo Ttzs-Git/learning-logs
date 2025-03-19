@@ -1,32 +1,46 @@
 # Stream
 
-`external source`----`string representation`------`type`
-
-> 两个主要问题: `read/write` `type conversion`
->
-> **Streams** provide a unified interface for interacting with external input.
-
 ## g++命令
 
 - **`g++`** ：GNU C++ 编译器，用于编译 C++ 程序。
 - **`-std=c++17`** ：指定编译标准为 C++17。这表示编译器将按照 C++17 标准解析和编译代码，支持该标准下的所有特性。
 - **`-Wall`** ：启用所有警告选项。编译器会输出尽可能多的潜在问题警告，帮助开发者发现代码中的隐患。
-- **`-o xx`** ：指定输出的可执行文件名为 `xx`。如果不指定 `-o` 参数，默认输出文件名为 `a.out`。g
+- **`-o xx`** ：指定输出的可执行文件名为 `xx`。如果不指定 `-o` 参数，默认输出文件名为 `a.out`。
 
-## sstream库
+## 本节课的关键两个关键问题
 
-> stringstream is not connected with any external source.
+### 如何将数据传输到控制台？
+
+Data object--->string representaiton --->console
+
+### 如何从文件中读取数据？
+
+file-->string repreentation --->data object
+
+Summary: `external source`----`string representation`------`type`
+
+> 主要需要解决的问题: `read/write` `type conversion`
+>
+> **Streams** provide a unified interface for interacting with external input.
+>
+> **Type conversion ** can be achieved automatically.
+
+## sstream库(stringstream)
+
+> stringstream is not connected to any external source.
 
 ### ostringstream
 ```python
  ostringstream 变量名("内容",参数) 
 ```
 
-> `目的`:创建变量
+> `目的`:创建输出字符串流类型的变量
 >
-> `参数`：
+> `modes`：
 >
-> - `ostringstream::ate`-->流保持追加的状态
+> 1. `ostringstream::ate`-->(start at end)从上一次的结束位置开始——流保持追加的状态
+>
+> 
 
 ```python
 变量<<"内容"
@@ -49,6 +63,11 @@ istringstream 变量名(字符串,参数)
 ```
 
 > `目的`:转化为输出流
+>
+> `模式`:
+>
+> 1. `stringstream::bin`——(read as binary)作为二进制进行读取
+> 2. 
 
 ```python
 流变量>>变量
