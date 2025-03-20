@@ -25,6 +25,13 @@ def num_eights(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    if n<10 and n%10!=8:
+        return 0
+    else:
+        if n%10==8:
+            return 1+num_eights(n//10)
+        else:
+            return num_eights(n//10)
 
 
 def digit_distance(n):
@@ -47,6 +54,10 @@ def digit_distance(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    if n<10:
+        return 0
+    else:
+        return abs(n%10-n//10%10)+digit_distance(n//10)
 
 
 def interleaved_sum(n, odd_func, even_func):
