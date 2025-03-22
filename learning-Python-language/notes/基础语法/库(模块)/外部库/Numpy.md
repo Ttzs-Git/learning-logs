@@ -149,7 +149,37 @@ np.argmax(<np>,[axis=<n>])
 np.log()
 ```
 
+### 随机抽取
 
+```python
+np.random.choice(<range>,<n>)
+```
+
+> `目的`:从0~range中随机选择n个数字组成数组
+
+### [x,y]数组
+
+```python
+np.arrage(<n>,<t>)
+```
+
+> `目的`:生成一个数组，实现从<n>---><t>的映射的复合数组
+
+### 生成0数组
+
+```python
+np.zeros_like(x)
+```
+
+> `目的`:生成一个跟x形状相同的数组
+
+### 生成标准正态分布随机数
+
+```python
+np.random.randn([<row>,<col>])
+```
+
+> `目的`:生成符合均值为 0，方差为 1 的正态分布的浮点数或者浮点数数组
 
 ## 多维数组的操作
 
@@ -186,3 +216,38 @@ np.matmul(<np>,<np>)
 ```
 
 > `点积`：返回两个张量的点积
+
+## 迭代器
+
+```pytho
+np.nditer(<np>,op_flags=['<str>'],flags=['<str>'],order)
+```
+
+> `op_flags`:操作标志，控制如何访问数组元素。常见的值有 `'readwrite'` 和 `'readonly'`
+>
+> `flags`:迭代器标志，控制迭代行为。常用的包括：
+> 1. `'c_index'`：提供C顺序索引。
+> 2. `'f_index'`：提供Fortran顺序索引。
+> 3. `'multi_index'`：提供多维索引。
+> 4.  `'refs_ok'`：允许对数组元素的引用进行操作
+>
+> `order`:指定迭代顺序，可以是 `'C'`（按行）或 `'F'`（按列）
+
+### 读写模式
+
+```python
+with mp.nditer(<np>,op_flags=['readwrite']) as it:
+    <statement>
+```
+
+### 多维索引
+
+```python
+it=np.nditer(<np>,flags=['multi_index'])
+```
+
+### 迭代多个数组
+
+```python
+for x,y in np.nditer([a,b]):
+    <statement>
