@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "标准库类型/vector模板(向量).md",
+                "file": "函数/函数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vector模板(向量)"
+              "title": "函数"
             }
           }
         ]
@@ -165,25 +165,25 @@
   },
   "active": "0d4df01d2fad621e",
   "lastOpenFiles": [
+    "语句.md",
+    "头文件.md",
+    "类型处理.md",
+    "复合类型.md",
+    "表达式.md",
+    "变量.md",
+    "备注.md",
+    "函数/函数.md",
+    "标准库类型/vector模板(向量).md",
     "c++.canvas",
     "C++11.md",
     "pi/Pasted image 20250319225413.png",
     "标准库类型.md",
-    "函数/函数.md",
     "函数",
-    "备注.md",
-    "语句.md",
     "基本类型.md",
-    "变量.md",
-    "表达式.md",
     "标准库类型/string.md",
-    "复合类型.md",
-    "头文件.md",
     "命名空间.md",
-    "类型处理.md",
     "经典练习题.md",
     "常见技术.md",
-    "标准库类型/vector模板(向量).md",
     "标准库类型/编写建议.md",
     "标准库类型",
     "预处理命令.md",
