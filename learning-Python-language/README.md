@@ -25,7 +25,7 @@
 
 特别鸣谢：[pyspider-project](https://github.com/yanqiangmiffy/pyspider-project)
 
-
+特别鸣谢: [黄海广教授的分享](https://github.com/fengdu78)
 
 #### 开源许可证
 
