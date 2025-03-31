@@ -22,6 +22,69 @@ NumPy（Numeric Python）提供了许多高级的数值编程工具，如：矩�
 
 --------
 ## 基本属性
+### 库信息
+
+```python
+np.__version__ #版本信息
+np.show_config # 显示构建numpy的系统中的库
+np.__config__ # 配置信息
+```
+
+### 获取文档
+
+```python
+np.info(np.<func>) #获得函数、属性的信息
+```
+
+### 常量值
+
+```python
+np.nan # not a number
+np.inf # infinity 无穷
+```
+
+> **注意点**：
+>
+> 1. 不同的nan不相等
+> 2. 0*nan==nan
+> 3. nan>inf
+> 4. nan的算术运算还是nan
+> 5. nan in set([np.nan])
+> 6. 浮点数的计算不是精确的
+> 7. nan转化为整数时为0
+> 8. 0/0在np定义为nan
+> 9. 0//0抛出警告并返回0
+
+### 数组信息
+
+```python
+## 返回维度(秩)
+np.ndim(<np>)
+<np>.ndim
+
+## 返回行数和列数
+<np>.shape # `目的`：输出<np>的行列数据组成的元组
+```
+
+### 元素信息
+
+```python
+<np>.size #返回元素个数
+<np>.itemszie #返回元素信息
+<np>.dtype #返回元素类型
+np.dtype.name # 返回数组元素类型
+```
+
+### 增加数组维度
+
+```python
+np.newaxis
+```
+
+---------
+
+## 数组生成
+
 ### 生成NumPy数组
 
 ```python
@@ -33,63 +96,6 @@ np.array(<list>,[dtype=np.<type>]/type)
 > `dtype`:指定元素的类型，例如: np.int32
 >
 > **目的**： 实现列表转化为numpy数组
-
-
-### 返回维度(秩)
-
-```python
-np.ndim(<np>)
-```
-
-```python
-<np>.ndim
-```
-
-> `目的`：返回<np>的秩(多维数组的维度).
->
-> 第一个是ndim函数，第二个是<\np>的属性
-
-### 返回行数和列数
-
-```python
-<np>.shape
-```
-
-> `目的`：输出<np>的行列数据组成的元组
-
-### 返回元素个数
-
-```python
-<np>.size
-```
-
-> **目的**： 返回元素的个数
-
-### 返回元素类型
-
-```python
-<np>.dtype
-```
-
-### 增加数组维度
-
-```python
-np.newaxis
-```
-
-### 数组元素类型
-
-```python
-np.dtype.name
-```
-
-
-
-
-
----------
-
-## 特殊数组生成
 
 ### 创建全零数组
 
@@ -120,7 +126,7 @@ np.empty((<a>,<b>..))
 ### 创建连续数组
 
 ```python
-np.arrange(start,end,step)
+np.arange(start,end,step,[dtype="<str>"]) # 有效处理数据的间隔
 ```
 
 ### 创建连续型数据
@@ -130,6 +136,25 @@ np.linspace(start,end,<n>)
 ```
 
 > **目的**： 开始端start ，结束端end，创建20个数据，均匀分布
+
+### 创建单位阵
+
+```python
+np.eye(<n>) # 创建大小为n*n的单位阵
+```
+
+### 对角阵及其延申阵
+
+```python
+np.diag(v,k=0)
+```
+
+> **参数解释**： 
+>
+> - v array_like
+>   如果 v 是二维数组，则返回其第 k 对角线的副本。如果 v 是一维数组，则返回第 k 对角线上有 v 的二维数组。
+> - k int，可选
+>   对角线有问题。默认值为 0。使用 k>0 表示主对角线上方的对角线，使用 k<0 表示主对角线下方的对角线。
 
 ### 数学函数
 
@@ -143,15 +168,32 @@ np.add(<np1>,<np2>) # 加法函数
 np.multiply(<np1>,<np2>) #乘法函数
 np.maximum(<np1>,<np2>) #返回两个数组元素的最大值
 np.greater(<np1>,<np2>) # 返回两个数组<np1> > <np2>的布尔值
+
+
 ```
-
-
 
 ### 取整函数
 
 ```python
-np.floor(<np>) # 向左取整
-np.ceil(<np>)  # 向右取整
+## 取整函数
+np.floor(<np>) # 向左(下)取整
+np.ceil(<np>)  # 向右(上)取整
+## 靠近0或远离0取整配合abs()函数和copysign()函数使用
+
+## 取整数部分
+np.trunc(<np>) #向0方向取整
+<np>.astype(int) 
+<np>-<np>%1
+np.ceil(<np>)-1
+np.floor(<np>)
+```
+
+
+
+### 一致内容数组
+
+```python
+np.intersect1d(<np1>,<np2>)
 ```
 
 
@@ -161,6 +203,12 @@ np.ceil(<np>)  # 向右取整
 ```python
 np.random.seed(0) # 生成随机数种子
 ```
+
+```python
+np.random.randint(<start>,<end>,<step>)
+```
+
+> **目的**： 在start~end之间生成整数
 
 ```python
 np.random.rand(<a>,<b>)
@@ -180,13 +228,12 @@ np.random.randn([<row>,<col>])
 
 > `目的`:生成符合均值为 0，方差为 1 的正态分布的浮点数或者浮点数数组
 
-### 随机抽取
+
 
 ```python
-np.random.choice(<range>,<n>)
+np.random.choice(<range>,<n>) # 在0~range随机抽取整数
+np.random.uniform(<down>,<up>,<n>) # 在[down,up)中随机抽取n个均匀分布数字
 ```
-
-> `目的`:从0~range中随机选择n个数字组成数组
 
 ### [x,y]数组
 
@@ -204,15 +251,25 @@ np.zeros_like(x)
 
 > `目的`:生成一个跟x形状相同的数组
 
-### 数组增加
+### 数组扩充
 
 ```python
-np.title(<np1>,(<a>,<b>,..))
+np.tile(<np1>,(<a>,<b>,..))
 ```
 
 > **目的**： 讲数组赋值成()的形状
 
+### 数据构造
 
+```python
+np.dtype([<name>,<type>,<size>]..) #构造数据表明数据的类型和大小
+```
+
+### 符号拷贝
+
+```python
+np.copysign(<tar>,<res>) # 从<res>拷贝符号到<tar>中
+```
 
 
 -------------------
@@ -227,6 +284,7 @@ np.title(<np1>,(<a>,<b>,..))
 <x>*<y>
 <x>/<y>
 <x>**<n>
+<x>**<x>
 ```
 
 > 1. 对于**元素个数相同**的数组，才能进行算术运算
@@ -242,6 +300,21 @@ np.title(<np1>,(<a>,<b>,..))
 
 > `目的`：进行逻辑运算，产生布尔型的数组
 
+### 位运算
+
+```python
+<np1> >>/<< <n> #将<np1>中的每个元素移动<n>位
+<n> >>/<< <np1> #<n>移动<np1>的每个元素
+```
+
+### 复数运算
+
+```python
+<complex>*<np>
+```
+
+
+
 ### 求和运算
 
 ```python
@@ -251,6 +324,8 @@ np.sum(<np>,[axis=<n>])
 > `目的`:可以沿着指定的轴(维度)进行求和
 >
 > `axis`:0-按列求和 1-按行求和
+>
+> **区分** ：sum(<a>,<start>)是设置初始值的求和
 
 ### 最值运算
 ```python
@@ -345,7 +420,7 @@ np.diff(<np1>)
 
 > **目的**： 进行累差运算(后一个减前一个)，结果维数会改变
 
-### 查找
+### 条件生成
 
 ```python
 np.where(<condition>,<np>,<n>)
@@ -364,6 +439,12 @@ np.around(<np1>,decimals=<n>)
 > decimals 指定参数的小数部分的位数；正数的时候，>=5就会进位;负数的时候，>5才会进位且看成进10**abs(decimals)
 >
 > 负数进位取绝对值大的
+
+### 负数函数
+
+```python
+np.emath.sqrt(<n>) #能够处理负数
+```
 
 
 
@@ -385,6 +466,17 @@ np.matmul(<np1>,<np2>)
 ```
 
 > `点积`：返回两个张量的点积
+
+### 数组基本运算函数
+
+```python
+np.add(<np1>,<np2>,[out=<np>]) #指定输出对象，避免浅拷贝
+np.divide(<np1>,<np2>,[out=<np>])
+np.negative(<np1>,<np2>,[out=<np>])
+np.multiply(<np1>,<np2>,[out=<np>])
+```
+
+
 
 ### 数组合并
 
@@ -491,6 +583,16 @@ for item in X:
 >
 > 方框中也可以是**布尔型数组**
 
+```python
+np.unravel_index(<indices>,<shape>,<order='C'>) # 展开索引
+```
+
+> **参数解释**
+>
+> - indices: 索引值或者一个列表
+> - shape: 数组的形状
+> - order
+
 ### 切片运算
 
 ```python
@@ -499,9 +601,14 @@ for item in X:
 
 > **参数**： 
 >
-> 当参数为**数字**时，为该数字
+> 当参数为**数字**时，为该数字且包括
 >
-> 当参数为**[a:b :c]**,为从a到b-1且步长为c的数字
+> 当参数为**[a:b :c]**,为从a到b-1且步长为c的数字，不包括
+>
+> **应用**：
+>
+> 1. 倒置数组 **[::-1]**
+> 2. 拷贝数组
 
 ---------
 
@@ -565,6 +672,45 @@ np.unique(<np>) # 唯一化且从小到大排序
 np.in1d(<np1>,<np2>) # 元素不唯一返回True
 ```
 
+### 填充函数
+
+```python
+numpy.pad(array, pad_width, mode='constant', **kwargs)
+```
+
+> **目的**： 
+>
+> - **array**: 要填充的数组。
+> - **pad_width**: 定义在每个轴的边缘填充的值的数量。
+> - **mode**: 填充模式，可以是字符串或函数。
+>   - **constant**: 使用常数值填充（默认）。
+>   - **edge**: 使用数组的边缘值填充。
+>   - **linear_ramp**: 使用线性坡度填充。
+>   - **maximum**: 使用每个轴上向量的最大值填充。
+>   - **mean**: 使用每个轴上向量的平均值填充。
+>   - **median**: 使用每个轴上向量的中位数填充。
+>   - **minimum**: 使用每个轴上向量的最小值填充。
+>   - **reflect**: 使用向量的反射填充。
+>   - **symmetric**: 使用向量的对称反射填充。
+>   - **wrap**: 使用向量的包裹填充。
+>   - **empty**: 使用未定义的值填充
+> - **kwargs**: 其他可选参数
+
+### 错误修改
+
+```python
+defaults=np.seterr(all="ignore") # 设置浮点数运算的错误处理方式，此处表示忽略全部，保存到字典中
+np.setter(**defaults) # 释放警告
+```
+
+### 上下文管理器
+
+```python
+with np.errstate(divide='ignore'):
+    <statement>
+# 临时修改浮点数运算的错误处理方式，只在with块内生效
+```
+
 
 
 -------
@@ -579,7 +725,32 @@ np.in1d(<np1>,<np2>) # 元素不唯一返回True
 
 
 
+------------
 
+## 日期处理
+
+### 处理日期
+
+```python
+np.datetime64(<today>,<dtype=None>) #表示日期的数据类型的构造器
+```
+
+> **参数**
+>
+> - value: 支持np.datetime64,datetime.datetime对象,整数对象，字符串对象
+> - **`dtype`**（可选）：
+>   - **含义**：指定时间单位或精度。
+>   - 常见单位
+>     - 年 (`Y`)
+>     - 月 (`M`)
+>     - 日 (`D`)
+>     - 小时 (`h`)
+>     - 分钟 (`m`)
+>     - 秒 (`s`)
+>     - 毫秒 (`ms`)
+>     - 微秒 (`us`)
+>     - 纳秒 (`ns`)
+>   - 如果未指定 `dtype`，NumPy 会根据 `value` 自动推断时间单位
 
 --------
 
