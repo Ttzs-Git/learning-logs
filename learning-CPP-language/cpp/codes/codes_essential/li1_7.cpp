@@ -27,21 +27,38 @@ void oftxt(string m)
 void iftxt()
 {
     ifstream infile("li1_7.txt");
+    //安全性检查
+    if(!infile)
+    {
+        cerr<<"Unable to open it!!!";
+        return;
+    }
     vector<string> vstr;
     string str;
     int a=0;
     while(infile>>str)
     {
+        //将文本的字符串推进向量中
         vstr.push_back(str);
         a++;
     }
-    auto p=vstr.begin(),q=vstr.end();
-    whlie(p!=q)
+    //输出文本内容
+    //int a=vstr.size();
+    for(int i =0;i!=a;i++)
     {
-        p++;
-        cout<<*p;
+        cout<<vstr[i]<<endl;
+    }
+    //重新排序
+    sort(vstr.begin(),vstr.end());
+    //将内容输出
+    oftxt("sorted txt:");
+    a=vstr.size();
+    for(int i=0;i!=a;i++)
+    {
+        oftxt(vstr[i]);
     }
 
+  
 }
 
 
