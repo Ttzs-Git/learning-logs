@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_essential\\s3\\s3_project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AAB621BA-1C2F-4591-9D85-8DE981B3B99D}|s3_project\\s3_project.vcxproj|D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_essential\\s3\\li3_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "li3_1.cpp",
+              "DocumentMoniker": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_essential\\s3\\li3_1.cpp",
+              "RelativeDocumentMoniker": "..\\li3_1.cpp",
+              "ToolTip": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_essential\\s3\\li3_1.cpp*",
+              "RelativeToolTip": "..\\li3_1.cpp*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-20T09:27:01.427Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

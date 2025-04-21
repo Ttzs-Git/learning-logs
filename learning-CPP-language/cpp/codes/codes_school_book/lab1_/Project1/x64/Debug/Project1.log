@@ -1,0 +1,5 @@
+﻿  main_2.cpp
+D:\github\Project1\Project1\main_2.cpp(118,9): error C2661: “Time::Time”: 没有重载函数接受 3 个参数
+      D:\github\Project1\Project1\main_2.cpp(118,9):
+      尝试匹配参数列表“(int, int, int)”时
+  
