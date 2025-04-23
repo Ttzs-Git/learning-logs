@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA3DAE2-F460-4340-AA66-A11789109C33}|code2_jtdt.vcxproj|D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\CMessage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AA3DAE2-F460-4340-AA66-A11789109C33}|code2_jtdt.vcxproj|solutionrelative:CMessage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA3DAE2-F460-4340-AA66-A11789109C33}|code2_jtdt.vcxproj|D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\CMessage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AA3DAE2-F460-4340-AA66-A11789109C33}|code2_jtdt.vcxproj|solutionrelative:CMessage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CMessage.cpp",
+              "DocumentMoniker": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\CMessage.cpp",
+              "RelativeDocumentMoniker": "CMessage.cpp",
+              "ToolTip": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\CMessage.cpp*",
+              "RelativeToolTip": "CMessage.cpp*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-23T12:41:38.566Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CMessage.h",
+              "DocumentMoniker": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\CMessage.h",
+              "RelativeDocumentMoniker": "CMessage.h",
+              "ToolTip": "D:\\github\\learning-logs\\learning-CPP-language\\cpp\\codes\\codes_school_book\\code2_jtdt\\CMessage.h",
+              "RelativeToolTip": "CMessage.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-23T12:41:22.29Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

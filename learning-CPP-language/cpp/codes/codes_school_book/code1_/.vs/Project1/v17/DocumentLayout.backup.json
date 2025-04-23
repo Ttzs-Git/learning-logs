@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CAD01C-7D41-4095-8AAB-24BD60668010}|Project1\\Project1.vcxproj|D:\\github\\Project1\\Project1\\Time.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B5CAD01C-7D41-4095-8AAB-24BD60668010}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Time.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CAD01C-7D41-4095-8AAB-24BD60668010}|Project1\\Project1.vcxproj|D:\\github\\Project1\\Project1\\main_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B5CAD01C-7D41-4095-8AAB-24BD60668010}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main_2.cpp",
+              "DocumentMoniker": "D:\\github\\Project1\\Project1\\main_2.cpp",
+              "RelativeDocumentMoniker": "Project1\\main_2.cpp",
+              "ToolTip": "D:\\github\\Project1\\Project1\\main_2.cpp",
+              "RelativeToolTip": "Project1\\main_2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T13:19:06.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Time.hpp",
+              "DocumentMoniker": "D:\\github\\Project1\\Project1\\Time.hpp",
+              "RelativeDocumentMoniker": "Project1\\Time.hpp",
+              "ToolTip": "D:\\github\\Project1\\Project1\\Time.hpp*",
+              "RelativeToolTip": "Project1\\Time.hpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T13:16:12.736Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
