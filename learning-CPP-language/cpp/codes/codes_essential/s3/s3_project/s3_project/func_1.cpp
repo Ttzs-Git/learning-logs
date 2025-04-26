@@ -2,6 +2,9 @@
 #include<string>  
 #include<vector>  
 using namespace std;
+//复习基础的find函数--如何从一个简单的arr到是适合所有的容器
+
+
 
 ////写一个find函数仅对vector<int >有效  
 //int* find(const vector<int>& p, int value)

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="func_1.cpp">
+    <ClCompile Include="main5.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
