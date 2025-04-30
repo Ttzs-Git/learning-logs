@@ -1,0 +1,9 @@
+function y=f17(x)
+y=[];
+for k=x
+if x>=0&&x<=0.5
+    y(k)=2*x;
+elseif 
+end
+end
+
