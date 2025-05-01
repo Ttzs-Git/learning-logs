@@ -1,8 +1,11 @@
 %例1-8
 m=1820;
-t=[-m/250:0.1:m/250];
-m=1820;
+t=[-m/250:0.01:m/250];
 x=m/20*cos(t);
 y=m/20*sin(t);
 z=t;
 plot3(x,y,z)
+xlabel('x');
+ylabel('y');
+zlabel('z');
+title('1.8.1');

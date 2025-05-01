@@ -7,4 +7,4 @@ y=zeros(size(x));
 for i =1:length(x)
     y(i)=f17_2(x(i));
 end
-plot(x,y,'g+')
+plot(x,y,'-')

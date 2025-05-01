@@ -8,3 +8,7 @@ y=-10:0.01:10;
 Z=m*X.*exp(-X.^2-Y.^2);
 mesh(X,Y,Z);
 %surf(X,Y,Z)
+xlabel('x');
+ylabel('y');
+zlabel('z');
+title('1.11');
