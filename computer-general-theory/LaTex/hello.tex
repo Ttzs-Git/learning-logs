@@ -1,6 +1,22 @@
 \documentclass{article}
 % 使用选项的文档类---article\book\report
+% 文档类规定了设置文档的一般布局----设计边距、字体、间隔、章、标题是否需要另起一页等
+% 文档类\documentclass{<选项>}{<文档类>}
+% 基本文档类:article(无章的小短文) report(有章的文档，单面印刷) book(有章的文档，双面打印,正文前材料和正文后材料等) letter(没有目次信息) slides
+% 强大的拓展类---KOMA-Script包(scrartcl,scrreprt,scrbook,scrlttr2)和memoir文档类(book~)
+% 中文拓展类---ctexart，ctexrep，ctexbook
 \usepackage[T1]{fontenc}
+%  使用宏包[]-选项 {}类型
+%  宏包可以改变LaTex某些部分的功能，向LaTex添加新的命令，改变文档的设计
+%  LaTex 的内核对于用户而言，自定义是困难的，需要拓展包实现常见功能----特定语言的排版方式(断字,标点符号,引文,本地化..)
+%  自定义命令---无法找到的命令，重复输入的常见表达式，特定命令
+% \newcommand\<name>[参数的个数]{效果命令。。。#1} %一般提供一个参数
+% 谨慎对特定的文档的定义命令
+
+% 插入图片-需要宏包graphicx
+
+
+
 % 文档导盲区
 % \-命令起始符号
 % {}-强制性参数:命令所需要的参数
