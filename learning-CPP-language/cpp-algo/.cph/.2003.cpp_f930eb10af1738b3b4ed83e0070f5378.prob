@@ -1,0 +1,1 @@
+{"name":"Local: 2003","url":"/mnt/d/github/learning-logs/learning-CPP-language/cpp-algo/2003.cpp","tests":[{"id":1746709063376,"input":"123\n-234.00","output":"123.00\n234.00"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/github/learning-logs/learning-CPP-language/cpp-algo/2003.cpp","group":"local","local":true}

@@ -38,7 +38,7 @@ int main()
 	//定义流迭代器
 	map<string, int>::iterator it = word_count.begin();
 	map<string, int>::iterator itend = word_count.end();
-
+	
 	for (; it != itend; ++it)
 	{
 		outfile << it->first << " " << it->second << endl;

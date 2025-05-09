@@ -3,14 +3,20 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                 "/usr/include/c++/13",                         
+                "/usr/include/*"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c99",
             "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-x64"
+
+            // 包含你的项目文件，以及常见的系统头路径
         }
+        
     ],
+    
     "version": 4
 }
