@@ -1,0 +1,1 @@
+{"name":"Local: 2008","url":"/mnt/d/github/learning-logs/learning-CPP-language/cpp-algo/HDU_100/2008.cpp","tests":[{"id":1746771512618,"input":"6 0 1 2 3 -1 0\n5 1 2 3 4 0.5\n0 \n","output":"1 2 3\n0 0 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/d/github/learning-logs/learning-CPP-language/cpp-algo/HDU_100/2008.cpp","group":"local","local":true}
