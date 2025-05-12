@@ -18,6 +18,7 @@ int main()
         }
         for(int i=0;i!=m;++i)
         {
+            
             int num=0;
             cin>>num;
             if(set1.find(num)!=set1.end())
