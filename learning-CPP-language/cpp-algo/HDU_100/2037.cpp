@@ -2,6 +2,10 @@
 using namespace std;
 
 // HDU 2037
+bool cmp(vector<int> show1,vector<int> show2)
+{
+    return show1[1]<show2[1];
+}
 
 int main()
 {
@@ -23,7 +27,17 @@ int main()
             show.push_back(show0);
             
         }
-
+        sort(show.begin(),show.end(),cmp);
+        int flag=1,k=0;
+        for(int i=0;i!=n;++i)
+        {
+            if(show[k][1]<=show[i][0])
+            {
+                k=i;
+                ++flag;
+            }
+        }
+        cout<<flag<<endl;
     }
     return 0;
 }
