@@ -2,7 +2,9 @@
     "files.associations": {
         "typeinfo": "cpp",
         "iostream": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp"
     }
     
 }
