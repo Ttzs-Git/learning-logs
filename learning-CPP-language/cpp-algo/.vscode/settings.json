@@ -13,7 +13,8 @@
         "vector": "cpp",
         "string_view": "cpp",
         "span": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "ostream": "cpp"
     }
     
 }
