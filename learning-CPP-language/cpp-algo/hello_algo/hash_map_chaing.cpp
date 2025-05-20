@@ -15,7 +15,7 @@ class HashMapChain
 private:
     int MapSize;      // 键值对的个数
     int MapCapacity;  // 容量
-    double LoadThres;    // 负载因子
+    double LoadThres; // 负载因子
     int ExtendRation; // 拓展数
     std::vector<std::vector<Pair *>> buckets;
     HashMapChain() : MapSize(0), MapCapacity(4), LoadThres(2.0 / 3.0), ExtendRation(2)
@@ -76,7 +76,7 @@ private:
     void push(int key, std::string str)
     {
         int index = hash(key);
-            if (size() >= capacity() * LoadThres)
+        if (size() >= capacity() * LoadThres)
         {
             extend();
         }
@@ -85,7 +85,7 @@ private:
             if (p->key == key)
             {
                 p->val = str;
-                return ;
+                return;
             }
         }
         Pair *p = new Pair(key, str);
@@ -96,14 +96,15 @@ private:
     std::string remove(int key)
     {
         int index = hash(key);
-        for (int i=0;i< buckets[index].size();++i)
+        for (int i = 0; i < buckets[index].size(); ++i)
         {
-            Pair* p=buckets[index][i];
+            Pair *p = buckets[index][i];
             if (p->key == key)
             {
                 std::string str = p->val;
                 Pair *tep = p;
-                buckets[index].erase(buckets[index].begin()+i);;
+                buckets[index].erase(buckets[index].begin() + i);
+                ;
                 delete tep;
                 MapSize--;
                 return str;
@@ -114,13 +115,15 @@ private:
     }
     void extend()
     {
-        std::vector<std::vector<Pair *>> temp=buckets;
-        MapCapacity*=ExtendRation;
+        std::vector<std::vector<Pair *>> temp = buckets;
+        MapCapacity *= ExtendRation;
         buckets.clear();
         buckets.resize(MapCapacity);
-         for (auto &bucket : bucketsTmp) {
-            for (Pair *pair : bucket) {
-                put(pair->key, pair->val);
+        for (auto &bucket : buckets)
+        {
+            for (Pair *pair : bucket)
+            {
+                push(pair->key, pair->val);
                 // 释放内存
                 delete pair;
             }
@@ -136,4 +139,9 @@ private:
             }
         }
     }
+};
+
+int main()
+{
+    return 0;
 }

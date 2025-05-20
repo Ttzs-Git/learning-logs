@@ -14,7 +14,8 @@
         "string_view": "cpp",
         "span": "cpp",
         "stdexcept": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "ratio": "cpp"
     }
     
 }
