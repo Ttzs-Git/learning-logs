@@ -15,7 +15,16 @@
         "span": "cpp",
         "stdexcept": "cpp",
         "ostream": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "bitset": "cpp",
+        "coroutine": "cpp",
+        "string": "cpp",
+        "memory": "cpp",
+        "optional": "cpp",
+        "stacktrace": "cpp",
+        "system_error": "cpp",
+        "typeindex": "cpp",
+        "variant": "cpp"
     }
     
 }
