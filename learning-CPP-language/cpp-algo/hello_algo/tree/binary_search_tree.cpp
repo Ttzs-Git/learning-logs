@@ -8,61 +8,120 @@ struct TreeNode
     TreeNode(int val) : val(val), left(nullptr), right(nullptr) {}
 };
 
-TreeNode *tree;
-
-TreeNode *search(int num)
+class BinarySearchTree
 {
-    TreeNode *p = tree;
-    while (p != nullptr)
+private:
+    TreeNode *tree;
+
+public:
+    TreeNode *search(int num)
     {
+        TreeNode *p = tree;
+        while (p != nullptr)
+        {
+            if (p->val > num)
+            {
+                p = p->left;
+            }
+            else if (p->val < num)
+            {
+                p = p->right;
+            }
+            else
+                break;
+        }
+        return p;
+    }
+
+    void insert(int num)
+    {
+        if (tree == nullptr)
+        {
+            TreeNode *p = new TreeNode(num);
+            tree = p;
+            delete p;
+        }
+        TreeNode *cur = tree, *pre;
+        while (cur != nullptr)
+        {
+            if (cur->val == num)
+            {
+                break;
+            }
+            pre = cur;
+            if (cur->val > num)
+            {
+                cur = cur->left;
+            }
+            else if (cur->val < num)
+            {
+                cur = cur->right;
+            }
+        }
+        TreeNode *p = new TreeNode(num);
         if (p->val > num)
         {
-            p = p->left;
-        }
-        else if (p->val < num)
-        {
-            p = p->right;
+            p->left = p;
         }
         else
-            break;
-    }
-    return p;
-}
-
-void insert(int num)
-{
-    if (tree == nullptr)
-    {
-        TreeNode *p = new TreeNode(num);
-        tree = p;
+            p->right = p;
         delete p;
     }
-    TreeNode *cur = tree, *pre;
-    while (cur != nullptr)
+
+    void remove(int num)
     {
-        if (cur->val == num)
+        if (tree == nullptr)
+            return;
+        TreeNode *cur = tree, *pre = nullptr;
+        while (cur != nullptr)
         {
-            break;
+            pre = cur;
+            if (cur->val > num)
+            {
+                cur = cur->left;
+            }
+            else if (cur->val < num)
+            {
+                cur = cur->right;
+            }
+            else
+                break;
         }
-        pre = cur;
-        if (cur->val > num)
+        if (cur == nullptr)
         {
-            cur = cur->left;
+            // 没有num
+            return;
         }
-        else if (cur->val < num)
+        if (cur->left == nullptr || cur->right == nullptr)
         {
-            cur = cur->right;
+            TreeNode *child = cur->left != nullptr ? cur->left : cur->right;
+            if (pre->left == cur)
+            {
+                pre->left = child;
+            }
+            else if (pre->right == cur)
+            {
+                pre->right = child;
+            }
+            else if (cur == tree)
+            {
+                tree = child;
+            }
+            delete cur;
+        }
+        else
+        {
+            // 都有节点
+            TreeNode *p = cur->right;
+            while (p ->left!= nullptr)
+            {
+                p = p->left;
+            }
+            cur->val = p->val;
+            delete p;
         }
     }
-    TreeNode *p = new TreeNode(num);
-    if (p->val > num)
-    {
-        p->left = p;
-    }
-    else
-        p->right = p;
-    delete p;
-}
+};
 
 int main()
 {
