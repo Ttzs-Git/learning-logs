@@ -1,30 +1,64 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 // HDU 2054
-bool s(long long a, long long b)
+string simply(string a)
 {
-    int ra = 0, rb = 0;
-    while (a != 0 && b != 0)
+    int i = 0;
+    while (i < a.size() && a[0] == '0')
     {
-        ra = a % 10;
-        rb = b % 10;
-        if (ra != rb)
-            return false;
-        a/=10;
-        b/=10;
+        a.erase(a.begin());
     }
-    if (a == b)
+    return a;
+}
+bool Equal(string s1, string s2)
+{
+    if (s1[0] == '-' || s2[0] == '-')
+    {
+        if (s1[0] == s2[0])
+        {
+            s1.erase(s1.begin());
+            s2.erase(s2.begin());
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    s1 = simply(s1);
+    s2 = simply(s2);
+    int eof = min(s1.size(), s2.size());
+    int max_s = max(s1.size(), s2.size());
+    for (int i = 0; i != eof; ++i)
+    {
+        if (s1[i] != s2[i])
+        {
+            // 对于普通整数无问题
+            // 对于全部是浮点数没问题
+            return false;
+        }
+
+        string s = s1.size() == max_s ? s1 : s2;
+        for (int i = eof; i < max_s; ++i)
+        {
+            if (s[i] == '.')
+            {
+                continue;
+            }
+            if (s[i] != '0')
+                return false;
+        }
         return true;
-    else
-        return false;
+    }
 }
 int main()
 {
-    long long a = 0, b = 0;
+    string a, b;
     while (cin >> a >> b)
     {
-        cout << (s(a, b)?"YES":"NO" )<< endl;
+        cout << (Equal(a, b) ? "YES" : "NO") << endl;
     }
     return 0;
 }
